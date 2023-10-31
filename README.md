@@ -17,7 +17,8 @@ This repository contains the source code for [L-DAWA: Layer-wise Divergence Awar
 * CIFAR-10, CIFAR-100, Tiny-ImageNet
 
 # News
-* This build-up of this repository is in progress
+* Added the source code for L-DAWA
+* The build-up of this repository is in progress
 
 # Issues: 
 If you encounter any issues, feel free to open an issue in the GitHub. 
