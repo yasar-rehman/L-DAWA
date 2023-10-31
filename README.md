@@ -1,9 +1,10 @@
 # L-DAWA
-This repository contains the source code for [L-DAWA](https://arxiv.org/abs/2307.07393) that has been accepted in [ICCV-2023](https://iccv2023.thecvf.com/). This repository is built on top of [Pytorch Lightning](https://lightning.ai/) and [Flower](https://flower.dev/).
+This repository contains the source code for [L-DAWA: Layer-wise Divergence Aware Weight Aggregation in Federated Self-Supervised Visual Representation Learning](https://arxiv.org/abs/2307.07393) that has been accepted in [ICCV-2023](https://iccv2023.thecvf.com/). </br>  </br>
 
 ![](https://media.licdn.com/dms/image/D5622AQFDxcNyaVZKIg/feedshare-shrink_1280/0/1689607002732?e=1701907200&v=beta&t=ecvtXsNORK-DBvstI1vsgFMJMmPNbYfBnA8tg3AU8_M)
 
 # Requirements:
+This repository is built on top of [Pytorch Lightning](https://lightning.ai/) and [Flower](https://flower.dev/).
 * Pytorch Lightning: 1.4.19
 * Flower: 0.17.0
 
