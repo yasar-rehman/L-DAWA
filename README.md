@@ -3,13 +3,15 @@ This repository contains the source code for [L-DAWA: Layer-wise Divergence Awar
 
 ![](https://media.licdn.com/dms/image/D5622AQFDxcNyaVZKIg/feedshare-shrink_1280/0/1689607002732?e=1701907200&v=beta&t=ecvtXsNORK-DBvstI1vsgFMJMmPNbYfBnA8tg3AU8_M)
 
+# Authors
+- [Yasar Abbas Ur Rehman](https://yasar-rehman.github.io/yasar/) ,  [Yan Gao](https://www.cst.cam.ac.uk/people/yg381), [Pedro Porto Buarque de Gusmão](https://portobgusmao.com/), [Mina Alibegi](https://www.linkedin.com/in/mina-alibeigi-2b47739a/?originalSubdomain=se), [Jiajun Shen](https://www.linkedin.com/in/jiajunshen/), and [Nicholas D. Lane](http://niclane.org/) <br>
+
 # Requirements:
 This repository is built on top of [Pytorch Lightning](https://lightning.ai/) and [Flower](https://flower.dev/).
 * Pytorch Lightning: 1.4.19
 * Flower: 0.17.0
 
-# Authors
-- [Yasar Abbas Ur Rehman](https://yasar-rehman.github.io/yasar/) ,  [Yan Gao](https://www.cst.cam.ac.uk/people/yg381), [Pedro Porto Buarque de Gusmão](https://portobgusmao.com/), [Mina Alibegi](https://www.linkedin.com/in/mina-alibeigi-2b47739a/?originalSubdomain=se), [Jiajun Shen](https://www.linkedin.com/in/jiajunshen/), and [Nicholas D. Lane](http://niclane.org/) <br>
+
 
 # Datasets
 * CIFAR-10, CIFAR-100, Tiny-ImageNet
