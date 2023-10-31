@@ -1,5 +1,5 @@
 # L-DAWA
-This repository contains the source code for [L-DAWA](https://arxiv.org/abs/2307.07393). This repository is built on top of [Pytorch Lightning](https://lightning.ai/) and [Flower](https://flower.dev/).
+This repository contains the source code for [L-DAWA](https://arxiv.org/abs/2307.07393) that has been accepted in [ICCV-2023](https://iccv2023.thecvf.com/). This repository is built on top of [Pytorch Lightning](https://lightning.ai/) and [Flower](https://flower.dev/).
 
 # Requirements:
 * Pytorch Lightning: 1.4.19
