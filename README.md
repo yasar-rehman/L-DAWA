@@ -18,6 +18,7 @@ This repository is built on top of [Pytorch Lightning](https://lightning.ai/) an
 * This build-up of this repository is in progress
 
 # Dependencies
+For a complete list of the required packages please see the [requirement.txt](https://github.com/yasar-rehman/L-DAWA/blob/main/requirements.txt) file. One can easily install, all the requirements by running ````pip install -r requirement.txt````.
 - [x] [Anaconda environment with python 3.8](https://docs.conda.io/projects/conda/en/4.6.0/_downloads/52a95608c49671267e40c689e0bc00ca/conda-cheatsheet.pdf) 
 - [x] [Flower](https://flower.dev/) <br>
 
