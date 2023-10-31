@@ -9,12 +9,7 @@ This repository is built on top of [Pytorch Lightning](https://lightning.ai/) an
 * Flower: 0.17.0
 
 # Authors
-- [Yasar Abbas Ur Rehman](https://yasar-rehman.github.io/yasar/) <br>
-- [Yan Gao](https://www.cst.cam.ac.uk/people/yg381)
-- [Pedro Porto Buarque de Gusmão](https://portobgusmao.com/) <br>
-- [Mina Alibegi](https://www.linkedin.com/in/mina-alibeigi-2b47739a/?originalSubdomain=se)
-- [Jiajun Shen](https://www.linkedin.com/in/jiajunshen/) <br>
-- [Nicholas D. Lane](http://niclane.org/) <br>
+- [Yasar Abbas Ur Rehman](https://yasar-rehman.github.io/yasar/) ,  [Yan Gao](https://www.cst.cam.ac.uk/people/yg381), [Pedro Porto Buarque de Gusmão](https://portobgusmao.com/), [Mina Alibegi](https://www.linkedin.com/in/mina-alibeigi-2b47739a/?originalSubdomain=se), [Jiajun Shen](https://www.linkedin.com/in/jiajunshen/), and [Nicholas D. Lane](http://niclane.org/) <br>
 
 # Datasets
 * CIFAR-10
