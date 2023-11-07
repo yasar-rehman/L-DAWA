@@ -3,6 +3,8 @@ This repository contains the source code for [L-DAWA: Layer-wise Divergence Awar
 
 ![](https://media.licdn.com/dms/image/D5622AQFDxcNyaVZKIg/feedshare-shrink_1280/0/1689607002732?e=1701907200&v=beta&t=ecvtXsNORK-DBvstI1vsgFMJMmPNbYfBnA8tg3AU8_M)
 
+[Paper](https://arxiv.org/abs/2307.07393), [Supplementary materials](https://yasar-rehman.github.io/files/ICCV2023_image_SSL_FL__supplementary_.pdf) 
+
 # Authors
 - [Yasar Abbas Ur Rehman](https://yasar-rehman.github.io/yasar/) ,  [Yan Gao](https://www.cst.cam.ac.uk/people/yg381), [Pedro Porto Buarque de Gusmão](https://portobgusmao.com/), [Mina Alibegi](https://www.linkedin.com/in/mina-alibeigi-2b47739a/?originalSubdomain=se), [Jiajun Shen](https://www.linkedin.com/in/jiajunshen/), and [Nicholas D. Lane](http://niclane.org/) <br>
 
