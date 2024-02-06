@@ -87,9 +87,9 @@ class SaveModelStrategy(fl.server.strategy.FedAvg):
 
         if int(GLB_RND) > 2: # after warm up
            
-            weights_results_fedavg = [(para, num) for para, loss, num in weights_results]
+            weights_results_LDAWA = [(para, num) for para, loss, num in weights_results]
             start = timer()
-            weights_loss = my_aggregate(weights_results_fedavg,glb_pr_parameters) # fedavg          
+            weights_loss = L_DAWA(weights_results_LDAWA,glb_pr_parameters) # LDAWA          
             weights = weights_to_parameters(weights_loss)
 
         else:     
@@ -124,7 +124,7 @@ class SaveModelStrategy(fl.server.strategy.FedAvg):
         return weights, {}
 
 
-def my_aggregate(results: List[Tuple[Weights, float]], w_g):
+def L_DAWA(results: List[Tuple[Weights, float]], w_g):
     d = np.arange(len(w_g)) # numpy array equal to the length of layers
     c = [weights for weights, _ in results] # pass: it will give the weights of the clients as a list
     # print(c[0][0].shape)
