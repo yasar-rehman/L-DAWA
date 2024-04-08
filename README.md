@@ -64,6 +64,7 @@ The results below are obtained by pertaining SimCLR in _Cross-Silo_ FL settings 
 
 # News
 * Added the source code for L-DAWA
+* Added a ```main.py``` code which could be used with PyTorch or PyTorch Lightning
 * The build-up of this repository is in progress
 
 # Issues: 
