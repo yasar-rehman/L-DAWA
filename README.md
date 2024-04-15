@@ -17,7 +17,8 @@ This repository contains the source code for [L-DAWA: Layer-wise Divergence Awar
 # Tutorials and Helping materials
 * Federated Learning with PyTorch Lightning and Flower -- > https://github.com/adap/flower/tree/main/examples/quickstart-pytorch-lightning
 * Building a custom strategy from scratch with Flower ---> https://flower.dev/docs/framework/tutorial-series-build-a-strategy-from-scratch-pytorch.html
-
+# How to run the code
+* Go to the folder ```FL_Pretraining``` and run the ```pretrain_FL.py``` script.    
 
 # Datasets
 * CIFAR-10, CIFAR-100, Tiny-ImageNet
@@ -64,7 +65,8 @@ The results below are obtained by pertaining SimCLR in _Cross-Silo_ FL settings 
 
 # News
 * Added the source code for L-DAWA
-* Added a ```main.py``` code which could be used with PyTorch or PyTorch Lightning
+* Added the inventory folder
+* Added the FL_pretraining script
 * The build-up of this repository is in progress
 
 # Issues: 
