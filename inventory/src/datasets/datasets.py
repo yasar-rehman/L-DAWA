@@ -5,17 +5,6 @@ from PIL import ImageFilter, Image
 
 from .cifar10 import CIFAR10, CIFAR10Corners, CIFAR10_FED, CIFAR10_semi
 from .cifar100 import CIFAR100, CIFAR100Corners, CIFAR100_FED, CIFAR100_semi
-from .imagenet import ImageNet
-from .meta_datasets.aircraft import Aircraft
-from .meta_datasets.cu_birds import CUBirds
-from .meta_datasets.dtd import DTD
-from .meta_datasets.fashionmnist import FashionMNIST
-from .meta_datasets.fungi import Fungi
-from .meta_datasets.mnist import MNIST
-from .meta_datasets.mscoco import MSCOCO as MSCOCO2
-from .meta_datasets.traffic_sign import TrafficSign
-from .meta_datasets.vgg_flower import VGGFlower
-from .data_statistics import get_data_mean_and_stdev
 
 DATASET = {
     'cifar10': CIFAR10,
@@ -24,17 +13,7 @@ DATASET = {
     'cifar10_semi':CIFAR10_semi,
     'cifar100_semi':CIFAR100_semi,
     'cifar10_Fed': CIFAR10_FED,
-    'cifar100_Fed': CIFAR100_FED,
-    'meta_aircraft': Aircraft,
-    'meta_cu_birds': CUBirds,
-    'meta_dtd': DTD,
-    'meta_fashionmnist': FashionMNIST,
-    'meta_fungi': Fungi,
-    'meta_mnist': MNIST,
-    'meta_mscoco': MSCOCO2,
-    'meta_traffic_sign': TrafficSign,
-    'meta_vgg_flower': VGGFlower,
-    'ImageNet': ImageNet 
+    'cifar100_Fed': CIFAR100_FED
 }
 
 
@@ -203,43 +182,6 @@ def load_default_transforms(cfg,dataset):
                                 std=[0.247, 0.243, 0.261]),
         ])
 
-    elif dataset in ['mscoco'] or 'meta_' in dataset:
-        mean, std = get_data_mean_and_stdev(dataset)
-        train_transforms = transforms.Compose([
-            transforms.RandomResizedCrop(32, scale=(0.2, 1.)),
-            transforms.RandomApply([
-                transforms.ColorJitter(0.4, 0.4, 0.4, 0.1)  # not strengthened
-            ], p=0.8),
-            transforms.RandomGrayscale(p=0.2),
-            transforms.RandomApply([GaussianBlur([.1, 2.])], p=0.5),
-            transforms.RandomHorizontalFlip(),
-            transforms.ToTensor(),
-            transforms.Normalize(mean=mean, std=std),
-        ])
-        test_transforms = transforms.Compose([
-            transforms.Resize(32),
-            transforms.CenterCrop(32),
-            transforms.ToTensor(),
-            transforms.Normalize(mean=mean, std=std),
-        ])
-    elif 'ImageNet' in dataset:
-        train_transforms = transforms.Compose([
-            transforms.RandomResizedCrop(224, scale=(0.08, 1.)),
-            transforms.RandomApply([
-                transforms.ColorJitter(0.8, 0.8, 0.8, 0.1)  # not strengthened
-            ], p=0.8),
-            transforms.RandomGrayscale(p=0.2),
-            transforms.RandomApply([GaussianBlur([.1, 2.])], p=0.5),
-            transforms.RandomHorizontalFlip(),
-            transforms.ToTensor(),
-            transforms.Normalize(mean=[0.485, 0.456, 0.406],
-                                std=[0.229, 0.224, 0.225]),
-        ])
-        test_transforms = transforms.Compose([
-            transforms.ToTensor(),
-            transforms.Normalize(mean=[0.485, 0.456, 0.406],
-                                std=[0.229, 0.224, 0.225]),
-        ])
     else:
         return None, None
     
@@ -257,19 +199,6 @@ def load_rotation_transforms(cfg,dataset):
             transforms.ToTensor(),
             transforms.Normalize(mean=[0.491, 0.482, 0.446],
                                 std=[0.247, 0.243, 0.261]),
-        ])
-    elif dataset in ['mscoco'] or 'meta_' in dataset:
-        mean, std = get_data_mean_and_stdev(dataset)
-        train_transforms = transforms.Compose([
-            transforms.RandomRotation((0,360)),
-            transforms.ToTensor(),
-            transforms.Normalize(mean=mean, std=std),
-        ])
-        test_transforms = transforms.Compose([
-            transforms.Resize(32),
-            transforms.CenterCrop(32),
-            transforms.ToTensor(),
-            transforms.Normalize(mean=mean, std=std),
         ])
     else:
         return None, None
@@ -290,22 +219,6 @@ def load_default_unnorm_transforms(cfg, dataset, **kwargs):
             transforms.ToTensor(),
         ])
         test_transforms = transforms.ToTensor()
-    elif dataset in ['mscoco'] or 'meta_' in dataset:
-        train_transforms = transforms.Compose([
-            transforms.RandomResizedCrop(32, scale=(0.2, 1.)),
-            transforms.RandomApply([
-                transforms.ColorJitter(0.4, 0.4, 0.4, 0.1)  # not strengthened
-            ], p=0.8),
-            transforms.RandomGrayscale(p=0.2),
-            transforms.RandomApply([GaussianBlur([.1, 2.])], p=0.5),
-            transforms.RandomHorizontalFlip(),
-            transforms.ToTensor(),
-        ])
-        test_transforms = transforms.Compose([
-            transforms.Resize(32),
-            transforms.CenterCrop(32),
-            transforms.ToTensor(),
-        ])
     else:
         return None, None
 

@@ -18,11 +18,9 @@ from ..datasets import datasets
 from ..models import resnet_small, resnet
 from ..models.transfer import LogisticRegression
 from ..objectives.memory_bank import MemoryBank
-from ..objectives.adversarial import  AdversarialSimCLRLoss,  AdversarialNCELoss
 from ..objectives.infonce import NoiseConstrastiveEstimation
 from ..objectives.simclr import SimCLRObjective
 from ..objectives.Barlotwins import BarlowtinsObjective
-from ..objectives.rot import ROTObjective
 from ..utils import utils
 from flwr.common import parameter
 from ..models import viewmaker
